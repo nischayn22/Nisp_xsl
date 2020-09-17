@@ -38,7 +38,10 @@ Description : This stylesheet is a customization of Norman Walsh DocBook
                 exclude-result-prefixes="#default saxon axf rx stbl xtbl"
                 version="1.1">
 
+<!--
+Not needed as the extension already imports them - Nischayn22
 <xsl:import href="../docbook-xsl/fo/docbook.xsl"/>
+-->
 <xsl:import href="nisp-titlepages.xsl"/>
 <xsl:import href="../common/common.xsl"/>
 
