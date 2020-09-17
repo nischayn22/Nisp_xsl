@@ -174,8 +174,11 @@ Description : This stylesheet is a customization of Norman Walsh DocBook
 
 <xsl:param name="title.margin.left" select="'0pc'"/>
 
-<xsl:param name="draft.mode" select="''"/> <!-- Set by build file -->
+<!--
+Not needed for DocbookExport - Nischayn22
+<xsl:param name="draft.mode" select="''"/> 
 <xsl:param name="draft.watermark.image" select="'../images/draft.svg'"/>
+-->
 
 <xsl:param name="headers.on.blank.pages" select="1"/>
 <xsl:param name="footers.on.blank.pages" select="1"/>
