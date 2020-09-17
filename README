@@ -1,0 +1,54 @@
+This directory contains the stylesheets for the NISP used to create
+both the HTML, PDF and HTMLHelp versions.
+
+
+MANIFEST
+--------
+
+README              this file
+
+xsl.properties      XSL related build properties for ant
+
+rtf-prepare.xsl     Prepare FO files for transformation to RTF 
+
+makebuild.xsl       Used to create a new build targets fragment
+makeolinks.xsl      Create the main olinks master file
+makeUUID.xsl        Add UUID to empty UUID elements
+checkdb.xsl         show diagnostics during the build process
+
+PDFcoverdoc.xsl     create the page, which refers to PDF files
+
+common/             misc files used by both XHTML and FO versions
+css/                cascaded stylesheets 
+debug/              stylesheets used to create debug reports on the database
+docbook-xsl         DocBook XSL stylesheets distribution
+fo/                 stylesheets for FO version 
+fonts/              font used for navigation elements
+htmlhelp/           stylesheets for HTML Help version
+images/             images used in the XHTML versions
+javascripts/        JavaScript's used by the CSS framework use to style HTML5 pages
+resolve/            resolver stylesheets
+xhtml/              stylesheets for XHTML version
+
+In debug/  
+
+Most stylesheet pipes the result tree into another stylesheet with the name p2-*.xsl
+
+deb-overview.xsl    generate an overview of all standards in the DB
+deb-duplex.xsl      generate list of standards sorted by pubnum and org
+deb-dates.xsl       generate list of events sorted by decreasing time
+deb-select.xsl      show all mandatory/emerging/fading statement and the standard it refers to
+deb-family.xsl      create DB parent/child relationship list
+deb-info.xsl        show information about all documents
+deb-figures.xsl     show all figures
+
+
+In resolve/
+
+resolve.xsl         generic resolve stylesheet
+resolve2.xsl        merge the standard database with volume 2
+resolve-common.xsl  common templates used in all resolve stylesheets
+
+db-resolve.xsl      Transform the DB to a strictly hierarchical structure, 
+                    since it is much easier to create stylesheets to manipulate
+                    a hierarchical structure.    
