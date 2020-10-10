@@ -578,6 +578,32 @@ Not needed for DocbookExport - Nischayn22
 
 
 <!-- ==================================================================== -->
+<!--  Generate footers                                                    -->
+<!-- ==================================================================== -->
+
+<!-- ....................................................................
+
+     Source: fo/pagesetup.xsl - DocBook XSL 1.75.2
+
+     Descr: Generate footers
+
+     .................................................................... -->
+
+
+<xsl:template name="footer.content">
+  <xsl:param name="pageclass" select="''"/>
+  <xsl:param name="sequence" select="''"/>
+  <xsl:param name="position" select="''"/>
+  <xsl:param name="gentext-key" select="''"/>
+  <fo:block>
+    <xsl:if test="$pageclass != 'titlepage' and $position='center'">
+      <fo:block space-before="4pt">- <fo:page-number/> -</fo:block>
+    </xsl:if>
+  </fo:block>
+</xsl:template>
+
+
+<!-- ==================================================================== -->
 <!-- Handling of blank pages                                              -->
 <!-- ==================================================================== -->
 
