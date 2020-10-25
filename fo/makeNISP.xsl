@@ -587,8 +587,6 @@ Not needed for DocbookExport - Nischayn22
 
      Descr: Generate footers
 
-     .................................................................... -->
-
 
 <xsl:template name="footer.content">
   <xsl:param name="pageclass" select="''"/>
@@ -601,6 +599,8 @@ Not needed for DocbookExport - Nischayn22
     </xsl:if>
   </fo:block>
 </xsl:template>
+
+     .................................................................... -->
 
 
 <!-- ==================================================================== -->
