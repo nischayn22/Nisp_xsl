@@ -315,6 +315,7 @@ Not needed for DocbookExport - Nischayn22
 
 <xsl:template match="chapter/para
                      |appendix/para
+                     |section/para
                      |sect1/para
                      |sect2/para
                      |sect3/para
@@ -325,6 +326,7 @@ Not needed for DocbookExport - Nischayn22
       <xsl:number from="book"
                  count="para[parent::chapter or
                                parent::appendix or
+                               parent::section or
                                parent::sect1 or
                                parent::sect2 or
                                parent::sect3 or
