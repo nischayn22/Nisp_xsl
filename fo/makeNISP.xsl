@@ -141,7 +141,7 @@ Not needed as the extension already imports them - Nischayn22
 </xsl:attribute-set>
 
 
-<xsl:param name="table.footnote.number.format">1</xsl:param>
+<xsl:param name="table.footnote.number.format">a</xsl:param>
 
 <!-- Graphics -->
 
