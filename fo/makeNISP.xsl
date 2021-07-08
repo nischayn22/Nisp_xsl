@@ -320,7 +320,8 @@ Not needed for DocbookExport - Nischayn22
                      |sect2/para
                      |sect3/para
                      |sect4/para
-                     |sect5/para">
+                     |sect5/para
+                     |section/para">
   <fo:block xsl:use-attribute-sets="normal.para.spacing">
     <xsl:if test="$use.para.numbering != 0">
       <xsl:number from="book"
@@ -331,7 +332,8 @@ Not needed for DocbookExport - Nischayn22
                                parent::sect2 or
                                parent::sect3 or
                                parent::sect4 or
-                               parent::sect5]" format="111" level="any"/>
+                               parent::sect5 or
+                               parent::section]" format="111" level="any"/>
       <xsl:text>. </xsl:text>
     </xsl:if>
     <xsl:apply-templates/>
